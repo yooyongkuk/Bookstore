@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+$w: 100%;
+$mar: 0 auto;
+
+#wrap {
+    position: relative;
+    width: $w;
+    margin: $mar;
+    padding: 0;
+    color: #434343;
+
+    font: {
+        size: 16px;
+        family: 'Prata', serif;
+    }
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+    }
+}
+
+/*헤더*/
+.main-header {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    font-family: 'Prata', serif;
+
+    border: {
+        bottom: 1px solid rgba(0, 0, 0, .07);
+    }
+
+    .top-header {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, .07);
+        margin: 0;
+
+        .top-header-bar {
+            width: 1170px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: {
+               top: 4px;
+            }
+
+            font-size: 13px;
+            margin: 0 auto;
+
+            .top-header-left {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                width: 50%;
+                height: auto;
+                div {
+                    width: 38%;
+                }
+            }
+
+            .top-header-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                width: 50%;
+                height: auto;
+
+                .top-header-right-1 {
+                    width: 18%;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin: 0;
+                        padding: 1px 0 0 0;
+                    }
+                }
+
+                .top-header-right-2 {
+                    width: 4px;
+
+                    span {
+                        text-align: center;
+                        padding: 0 0 0 14px;
+                    }
+                }
+
+                .top-header-right-3 {
+                    width: 30%;
+                    text-align: right;
+                    margin: 0;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: right;
+                        margin: 0;
+
+                        .login1 {
+                            width: 4%;
+                            padding: 1px 0 0 0;
+                        }
+
+                        .login2 {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .low-header {
+        // position: fixed;
+        width: 100%;
+        margin: 0;
+        background-color: white;
+        box-shadow: 0px 0px 0px transparent;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1170px;
+            height: auto;
+            margin: 0 auto;
+            
+
+            .logo {
+                width: 200px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 22px;
+                padding: 13px 0 0 0;
+                h1{
+                    color:coral;
+                }
+                span {
+                    font-size: 12px;
+                    
+                }
+            }
+
+            .nav-bar {
+                .menu {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+
+                    :hover  {
+                        color: coral;
+                    }
+
+                    li {
+                        margin: 0 0 0 18px;
+                       
+                        .sub {
+                            width: auto;
+                            position: absolute;
+                            top: 82%;
+                            display: none;
+                            
+
+                            li {
+                                margin: 0 ;
+                                width: 100%;
+                                line-height:1.5;
+                                background-color: #ddd;
+                               
+                                :hover{
+                                    color:coral;
+                                    background-color: white;
+                                   
+                                   
+                                    
+                                    
+                                }
+                                
+                                a{
+                                color: white;
+                            }
+                            }
+                        }
+                    }
+
+                    input {
+                        border: none;
+                        background-color: #ddd;
+                        border-radius: 5px;
+                        display: block;
+                        padding: 4px 0;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+/*푸터*/
+footer {
+    position: relative;
+    height: 280px;
+    margin: 0 auto;
+    padding: 0 0 6px 0;
+    background-color: #434343;
+    font-family: 'Prata', serif;
+
+    a {
+        color: white;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        color: white;
+        width: 1170px;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px 0 0 0;
+
+        .footer-address {
+            width: 30%;
+            font-size: 20px;
+            text-align: left;
+            line-height: 26px;
+
+            :hover a {
+                color: white
+            }
+
+            a {
+                text-decoration: none;
+                color: coral;
+            }
+        }
+
+        .footer-menu {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            ul {
+                font-size: 20px;
+
+                :hover a {
+                    color: coral;
+                }
+
+                .card {
+                    margin: 10px auto;
+                }
+            }
+        }
+
+    }
+}
+
+.sen {
+    width: 1170px;
+    margin: 0 auto;
+
+    p {
+        color: white;
+        margin: 20px auto;
+        color: white;
+        text-align: right;
+    }
+}
