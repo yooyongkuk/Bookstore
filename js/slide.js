@@ -7,7 +7,6 @@ var sliderWidth = $('#slider-wrap').width();
 
 $(document).ready(function(){
   
-  
   //set width to be 'x' times the number of slides
   $('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
   
@@ -48,7 +47,6 @@ $(document).ready(function(){
 
 });//DOCUMENT READY
   
-
 function slideLeft(){
   pos--;
   if(pos==-1){ pos = totalSlides-1; }
