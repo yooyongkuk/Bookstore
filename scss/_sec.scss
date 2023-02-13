@@ -1,0 +1,689 @@
+@charset "UTF-8";
+
+#sec2 {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 10px;
+
+    .rolling_wrap {
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+
+        .content {
+            position: absolute;
+            width: 160px;
+            height: 100%;
+            margin-left: 5px;
+            margin-right: 5px;
+            overflow: hidden;
+            padding: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+#sec3haikei {
+    width: 100%;
+    height: 1200px;
+    background-color: #dcdcdc;
+}
+
+#sec3 {
+    width: 1170px;
+    height: 1200px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    position: relative;
+
+    .tizu {
+        background-image: url(../img/일본지도2.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    h3 {
+        padding: 10px 0 0 20px;
+        color: coral;
+        font-size: 28px;
+        // text-shadow: 4px 4px 4px #878787;
+    }
+
+    input {
+        cursor: pointer;
+        line-height: 30px;
+        width: 240px;
+        padding: 0 0 0 10px;
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 4px 4px #878787;
+    }
+
+    h4 {
+        margin: 0px 0;
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        // text-shadow: 4px 4px 4px #878787;
+    }
+
+    #booklist {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+
+        span {
+            font-size: 10px;
+            margin: 0;
+            color: coral;
+        }
+
+        li {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            float: left;
+            line-height: 12px;
+            cursor: pointer;
+            padding: 6px 40px 0 40px;
+            margin: 0 3px;
+            box-shadow: 0px 4px 8px #878787;
+            font-weight: bold;
+            background-color: white;
+            color: #7e4646
+        }
+
+        :hover {
+            color: coral;
+            border: 1px solid coral;
+
+            span {
+                border: none;
+            }
+        }
+    }
+
+    #titlelist {
+        margin: 140px 0 0 0px;
+        font-size: 20px;
+        color: coral;
+        text-align: center;
+    }
+
+    .box_wrap {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding: 20px 0 0 0px;
+
+        .box {
+            width: 260px;
+            height: 382px;
+            float: left;
+            text-align: center;
+            margin: 14px;
+            padding: 15px 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 8px #878787;
+            background-color: rgb(199, 197, 197);
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0px 2px 4px #474141;
+            }
+
+            img {
+                width: 130px;
+                box-shadow: 1px 2px 6px #474141;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+
+            p {
+                font-size: 10px;
+                color: #666;
+                text-align: left;
+            }
+
+            h3 {
+                padding: 0px;
+            }
+
+            h6 {
+                padding: 0 0 4px 0;
+                color: coral;
+            }
+
+            a {
+                text-decoration: none;
+                color: #7e4646;
+                font-size: 14px;
+            }
+
+            :hover a {
+                text-decoration: underline;
+                color: coral;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 4px 10px;
+                margin: 6px 0;
+                // border: solid 1px currentColor;
+                border-radius: 6px;
+                background-color: #A7A37E;
+                color: #fff;
+                font-size: 10px;
+                text-decoration: none;
+                box-shadow: 0px 2px 4px #878787;
+
+                &:hover {
+                    background-color: coral;
+                }
+            }
+
+        }
+
+    }
+
+    #list_a {
+        display: block;
+    }
+
+    #list_b {
+        display: none;
+    }
+
+    #list_c {
+        display: none;
+    }
+
+    #list_d {
+        display: none;
+    }
+}
+
+//배너리스트//
+#sec4 {
+    width: 100%;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+    border-top: 1px solid #ddd;
+
+    .banner1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 1170px;
+        height: 100%;
+        margin: 0 auto;
+
+        li {
+            width: 110px;
+            height: 140px;
+
+            a {
+                text-align: center;
+
+                p {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 14px 10px 14px 10px;
+                    text-align: center;
+                    border: 6px solid white;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+
+                    &:hover {
+                        border: 6px solid white;
+                        box-shadow: 0px 0px 4px #b4b3b3;
+                        transform: scale(1.05);
+                    }
+
+                }
+
+                h6 {
+                    text-align: center;
+
+                    &:hover {
+                        color: coral
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+//작가//
+#sec5 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #dcdcdc;
+    padding: 60px 0;
+
+    .satka {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1170px;
+        height: 100%;
+        margin: 0 auto;
+
+        .satkahitari {
+            width: 28%;
+            height: auto;
+
+            img {
+                box-shadow: 4px 4px 4px #878787;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .satkamigi {
+            width: 70%;
+            height: auto;
+            padding: 10px;
+
+            .satkalileki1 {
+                width: 100%;
+                height: auto;
+
+                p {
+                    font-weight: bold;
+                }
+
+                h3 {
+                    font-size: 28px;
+                    color: coral;
+                }
+            }
+
+            .soseki {
+                float: left;
+                width: 178px;
+                height: 300px;
+                text-align: center;
+                margin: 36px 10px;
+                padding: 10px;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                img {
+                    box-shadow: 1px 2px 6px #474141;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+
+                h5 {
+                    padding: 8px;
+                    font-size: 10px;
+
+                }
+
+                h6 {
+                    padding: 0 0 4px 0;
+                    color: coral;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #7e4646;
+                    font-size: 8px;
+                }
+
+                :hover a {
+                    text-decoration: underline;
+                    color: coral;
+                }
+            }
+        }
+    }
+}
+
+//브로그//
+#sec6 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    padding: 30px 0;
+
+    .blog {
+        width: 1170px;
+        margin: 0 auto;
+
+        .blogtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0;
+
+            a {
+                color: coral;
+            }
+        }
+
+        .blog1 {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 49%;
+                height: 130px;
+                padding: 5px;
+                justify-content: space-between;
+
+                li {
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    padding: 10px 0 10px 10px;
+
+                    h4 {
+                        padding: 0 22px 10px 22px;
+
+                        :hover {
+                            color: coral;
+                        }
+                    }
+
+                    p {
+                        padding: 20px 0 10px 20px;
+                        font-size: 10px;
+                    }
+
+                    img {
+                        width: 160px;
+                        height: 110px;
+                        box-shadow: 4px 4px 4px #878787;
+                        border-radius: 5px;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+//event//
+#sec7 {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    padding: 30px 0;
+    background-color: #dcdcdc;
+
+    .event {
+        width: 1170px;
+        margin: 0 auto;
+
+        .eventtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0 20px 0;
+
+            a {
+                color: coral;
+            }
+        }
+
+        .event1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            ul {
+
+                width: 24%;
+                height: auto;
+                padding: 0;
+                box-shadow: 4px 4px 4px #878787;
+                background-color: white;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                li {
+                    position: relative;
+                    width: auto;
+                    height: auto;
+                    padding: 10px 10px 10px 10px;
+
+                    h4 {
+                        padding: 0 22px 10px 22px;
+
+                        :hover {
+                            color: coral;
+                        }
+                    }
+
+                    p {
+                        padding: 10px 22px;
+                        font-size: 10px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+
+                        &:hover {
+                            box-shadow: 0px 4px 8px #878787;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .eventlow {
+            width: 1170px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 30px 0;
+
+            .eventsubs {
+                width: 30%;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            input:focus {
+                outline: 1px solid #d50000;
+            }
+
+            .eventmail {
+                width: auto;
+
+                .mail {
+                    margin: 0 10px 10px 0;
+                    padding: 10px;
+                    border: none;
+                    width: 300px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        box-shadow: 4px 4px 4px #878787;
+                    }
+                }
+
+                .btn {
+                    text-align: center;
+                    color: white;
+                    background-color: rgb(106, 14, 14);
+                    padding: 10px 14px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 4px 4px 4px #878787;
+                        color: coral;
+                    }
+                }
+                span {
+                    :hover {
+                        color: coral;
+                    }
+
+                    padding: 0 0 0 10px;
+                }
+            }
+        }
+    }
+}
+
+#sec8 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+
+    .jinbutu {
+        width: 1170px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .mySlides {
+        display: block;
+        width: 100%;
+        height: 260px;
+
+        img {
+            position: absolute;
+            top: 8%;
+            left: 45%;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+        color: #000000;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: absolute;
+        margin-top: 140px;
+        width: 100%;
+        text-align: center;
+        
+        span{
+            color: coral;
+        }
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: coral;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 16px
+        }
+    }
+   }
