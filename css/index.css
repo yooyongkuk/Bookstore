@@ -16,21 +16,6 @@ a {
   color: #434343;
 }
 
-#wrap {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  color: #434343;
-  font-size: 16px;
-  font-family: "Prata", serif;
-}
-#wrap ul,
-#wrap li,
-#wrap ol {
-  list-style: none;
-}
-
 /*헤더*/
 .main-header {
   z-index: 100;
@@ -194,7 +179,7 @@ a {
 /*푸터*/
 footer {
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   height: 280px;
   margin: 0;
   padding: 0 0 6px 0;
@@ -262,29 +247,32 @@ footer .sen p {
 #up {
   z-index: 200;
   position: fixed;
-  right: 16px;
-  bottom: 20px;
-  width: 60px;
-  height: 60px;
+  right: 50px;
+  bottom: 50px;
+  width: 80px;
+  height: 80px;
   transition: all 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
-#up .on {
+
+#up.on {
   opacity: 1;
   visibility: visible;
 }
-#up .on a {
+
+#up a {
   display: block;
   padding: 20px;
   text-align: center;
   text-decoration: none;
+  color: #fff;
   z-index: 100;
 }
 
 /*GLOBALS*/
 #wrapper {
-  width: 100%;
+  min-width: 1170px;
   margin: 0 auto;
   height: 800px;
   position: relative;
@@ -317,16 +305,17 @@ footer .sen p {
   width: 100%;
   height: 100%;
 }
-.mySlideDiv div {
+.mySlideDiv .sltext {
   position: absolute;
-  top: 160px;
-  left: 60px;
+  top: 540px;
+  left: 100px;
 }
-.mySlideDiv div h3 {
+.mySlideDiv .sltext h3 {
   font-size: 36px;
   text-transform: uppercase;
+  margin: 20px 0;
 }
-.mySlideDiv div span {
+.mySlideDiv .sltext span {
   font-family: Neucha, Arial, sans serif;
   font-size: 21px;
 }
@@ -382,7 +371,7 @@ footer .sen p {
 }
 #sec2 .rolling_wrap {
   position: relative;
-  width: 100%;
+  min-width: 1170px;
   min-height: 200px;
   height: 200px;
   margin: auto;
@@ -403,7 +392,7 @@ footer .sen p {
 }
 
 #sec3haikei {
-  width: 100%;
+  min-width: 1170px;
   height: 1200px;
   background-color: #dcdcdc;
 }
@@ -463,7 +452,7 @@ footer .sen p {
   float: left;
   line-height: 12px;
   cursor: pointer;
-  padding: 6px 40px 0 40px;
+  padding: 6px 30px 0 40px;
   margin: 0 3px;
   box-shadow: 0px 4px 8px #878787;
   font-weight: bold;
@@ -609,7 +598,7 @@ footer .sen p {
 }
 
 #sec5 {
-  width: 100%;
+  min-width: 1170px;
   height: 600px;
   position: relative;
   background-color: #dcdcdc;
@@ -743,7 +732,7 @@ footer .sen p {
 }
 
 #sec7 {
-  width: 100%;
+  min-width: 1170px;
   height: 650px;
   position: relative;
   padding: 30px 0;

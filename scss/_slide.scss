@@ -3,7 +3,7 @@
 /*GLOBALS*/
 
 #wrapper {
-  width: 100%;
+  min-width:1170px ;
   margin: 0 auto;
   height: 800px;
   position: relative;
@@ -37,19 +37,22 @@
     height: 100%;
   }
 
-  div {
+  .sltext {
     position: absolute;
-    top: 160px;
-    left: 60px;
+    top:540px;
+    left:100px;
+    
 
     h3 {
       font-size: 36px;
       text-transform: uppercase;
+      margin: 20px 0;
     }
 
     span {
       font-family: Neucha, Arial, sans serif;
       font-size: 21px;
+      
     }
   }
 }
