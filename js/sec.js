@@ -55,7 +55,7 @@ $.ajax({
 
     for (var i = 0; i < contents.length; i++) {
 
-      $(".rolling_wrap > .content").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $(".rolling_wrap > .content").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
     }
 
   });
@@ -74,16 +74,16 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $("#list_a >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $("#list_a >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+      $("#list_a >.box").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $("#list_a >.box").eq(i).append("<h3>" + '<a href="kokoro.html">' + msg.documents[i].title + "</a>" + "</h3>");
       $("#list_a >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
 
       var str = msg.documents[i].contents;
       var str2 = str.substring(0, 30);
 
-      $("#list_a >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
-      $("#list_a >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+      $("#list_a >.box").eq(i).append("<p>" + '<a href="kokoro.html">' + str2 + "</a>" + "</p>");
+      $("#list_a >.box").eq(i).append('<a href="kokoro.html" class="btn">' + "click" + "</a>");
 
     }
 
@@ -103,16 +103,16 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $("#list_b >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $("#list_b >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+      $("#list_b >.box").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $("#list_b >.box").eq(i).append("<h3>" + '<a href="kokoro.html">' + msg.documents[i].title + "</a>" + "</h3>");
       $("#list_b >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
 
       var str = msg.documents[i].contents;
       var str2 = str.substring(0, 60);
 
-      $("#list_b >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
-      $("#list_b >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+      $("#list_b >.box").eq(i).append("<p>" + '<a href="kokoro.html">' + str2 + "</a>" + "</p>");
+      $("#list_b >.box").eq(i).append('<a href="kokoro.html" class="btn">' + "click" + "</a>");
 
     }
   });
@@ -131,16 +131,16 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $("#list_c >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $("#list_c >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+      $("#list_c >.box").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $("#list_c >.box").eq(i).append("<h3>" + '<a href="kokoro.html">' + msg.documents[i].title + "</a>" + "</h3>");
       $("#list_c >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
 
       var str = msg.documents[i].contents;
       var str2 = str.substring(0, 60);
 
-      $("#list_c >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
-      $("#list_c >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+      $("#list_c >.box").eq(i).append("<p>" + '<a href="kokoro.html">' + str2 + "</a>" + "</p>");
+      $("#list_c >.box").eq(i).append('<a href="kokoro.html" class="btn">' + "click" + "</a>");
 
     }
 
@@ -158,16 +158,16 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $("#list_d >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $("#list_d >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+      $("#list_d >.box").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $("#list_d >.box").eq(i).append("<h3>" + '<a href="kokoro.html">' + msg.documents[i].title + "</a>" + "</h3>");
       $("#list_d >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
 
       var str = msg.documents[i].contents;
       var str2 = str.substring(0, 30);
 
-      $("#list_d >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
-      $("#list_d >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+      $("#list_d >.box").eq(i).append("<p>" + '<a href="kokoro.html">' + str2 + "</a>" + "</p>");
+      $("#list_d >.box").eq(i).append('<a href="kokoro.html" class="btn">' + "click" + "</a>");
 
     }
 
@@ -233,8 +233,8 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".soseki").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $(".soseki").eq(i).append(`<h5><a href="sub2.html">${msg.documents[i].title}</a></h5>`);
+      $(".soseki").eq(i).append('<a href="kokoro.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+      $(".soseki").eq(i).append(`<h5><a href="kokoro.html">${msg.documents[i].title}</a></h5>`);
       $(".soseki").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
     }

@@ -60,7 +60,7 @@
         font-size: 28px;
         // text-shadow: 4px 4px 4px #878787;
     }
-
+    input:focus{outline:1px solid #d50000;}
     input {
         cursor: pointer;
         line-height: 30px;
@@ -72,6 +72,10 @@
         border-radius: 4px;
         border: 1px solid #ddd;
         box-shadow: 0px 4px 4px #878787;
+
+        &:hover{
+            border: 1px solid red;
+        }
     }
 
     h4 {
@@ -79,7 +83,7 @@
         width: 100%;
         font-size: 28px;
         text-align: center;
-        // text-shadow: 4px 4px 4px #878787;
+        color: #666;
     }
 
     #booklist {
@@ -102,7 +106,7 @@
             float: left;
             line-height: 12px;
             cursor: pointer;
-            padding: 6px 30px 0 40px;
+            padding: 6px 26px 0 32px;
             margin: 0 3px;
             box-shadow: 0px 4px 8px #878787;
             font-weight: bold;
@@ -550,6 +554,7 @@
                     border: none;
                     width: 300px;
                     border-radius: 5px;
+                    cursor: pointer;
 
                     &:hover {
                         box-shadow: 4px 4px 4px #878787;

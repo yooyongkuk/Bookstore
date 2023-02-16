@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Prata", serif;
 }
 
 ul,
@@ -13,7 +14,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #434343;
+  color: #666;
 }
 
 /*헤더*/
@@ -62,6 +63,9 @@ a {
 .main-header .top-header .top-header-bar .top-header-right .top-header-right-1 {
   width: 18%;
 }
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-1 img:hover {
+  transform: scale(1.1);
+}
 .main-header .top-header .top-header-bar .top-header-right .top-header-right-1 ul {
   display: flex;
   flex-direction: row;
@@ -92,9 +96,17 @@ a {
 .main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login1 {
   width: 4%;
   padding: 1px 0 0 0;
+  cursor: pointer;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login1:hover {
+  transform: scale(1.1);
 }
 .main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login2 {
   width: 80%;
+  cursor: pointer;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login2:hover {
+  color: red;
 }
 .main-header .low-header {
   opacity: 0.8;
@@ -119,6 +131,16 @@ a {
   text-align: center;
   line-height: 22px;
   padding: 22px 0 0 0;
+  text-shadow: 0px 2px 2px #ddd;
+}
+.main-header .low-header nav .logo:hover {
+  text-shadow: 0px 3px 3px #ddd;
+}
+.main-header .low-header nav .logo:hover h1 {
+  color: red;
+}
+.main-header .low-header nav .logo:hover span {
+  color: red;
 }
 .main-header .low-header nav .logo h1 {
   color: coral;
@@ -140,6 +162,9 @@ a {
 }
 .main-header .low-header nav .nav-bar .menu li {
   margin: 10px 0 0 22px;
+}
+.main-header .low-header nav .nav-bar .menu li img:hover {
+  transform: scale(1.1);
 }
 .main-header .low-header nav .nav-bar .menu li .sub {
   width: auto;
@@ -174,6 +199,9 @@ a {
   display: block;
   padding: 4px 0;
   text-align: center;
+}
+.main-header .low-header nav .nav-bar .menu input:hover {
+  border: 1px solid red;
 }
 
 /*푸터*/
@@ -415,6 +443,9 @@ footer .sen p {
   color: coral;
   font-size: 28px;
 }
+#sec3 input:focus {
+  outline: 1px solid #d50000;
+}
 #sec3 input {
   cursor: pointer;
   line-height: 30px;
@@ -427,11 +458,15 @@ footer .sen p {
   border: 1px solid #ddd;
   box-shadow: 0px 4px 4px #878787;
 }
+#sec3 input:hover {
+  border: 1px solid red;
+}
 #sec3 h4 {
   margin: 0px 0;
   width: 100%;
   font-size: 28px;
   text-align: center;
+  color: #666;
 }
 #sec3 #booklist {
   position: absolute;
@@ -452,7 +487,7 @@ footer .sen p {
   float: left;
   line-height: 12px;
   cursor: pointer;
-  padding: 6px 30px 0 40px;
+  padding: 6px 26px 0 32px;
   margin: 0 3px;
   box-shadow: 0px 4px 8px #878787;
   font-weight: bold;
@@ -815,6 +850,7 @@ footer .sen p {
   border: none;
   width: 300px;
   border-radius: 5px;
+  cursor: pointer;
 }
 #sec7 .event .eventlow .eventmail .mail:hover {
   box-shadow: 4px 4px 4px #878787;
