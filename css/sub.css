@@ -238,6 +238,12 @@ footer .footer-nav .footer-menu ul :hover a {
 footer .footer-nav .footer-menu ul .card {
   margin: 10px auto;
 }
+footer .footer-nav .footer-menu ul .card img {
+  box-shadow: 2px 2px 4px #434343;
+}
+footer .footer-nav .footer-menu ul .card img:hover {
+  box-shadow: 1px 1px 2px #fee0e0;
+}
 footer .sen {
   width: 1170px;
   margin: 0 auto;
