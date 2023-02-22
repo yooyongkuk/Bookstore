@@ -3,21 +3,21 @@
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "마음" },
+    data: { query: "나츠메소세키 마음" },
     headers: { Authorization: "KakaoAK 1bd3d4fafe24bf6038300a154bb36843" }
 })
     .done(function (msg) {
         console.log(msg.documents[1].title);
         console.log(msg.documents[1].thumbnail);
         // sub1
-        $(".sub_box").append("<img src='" + msg.documents[0].thumbnail + "'/>");
-        $(".syousai h3").html("<h3>" + msg.documents[0].title + "</h3>");
+        $(".sub_box").append("<img src='" + msg.documents[4].thumbnail + "'/>");
+        $(".syousai h3").html("<h3>" + msg.documents[1].title + "</h3>");
         $(".syousai > h3").append("<h6>" +"by "+ msg.documents[0].authors + "</h6>");
 
         $(".contextbox").append("<h3>" + msg.documents[0].authors[0] + "</h3>");
         $(".pricenum").append( msg.documents[0].price+" won");
       
-        var str = msg.documents[0].contents;
+        var str = msg.documents[3].contents;
         var str2 = str.substring(0, 600);
         $(".contextbox").append("<p>" + str2 + "</p>");
         $(".contextbox").append("<span>" + "자세히보기" + "</span>");
